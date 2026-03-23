@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { siteConfig } from './config';
 import { Nav } from './components/Nav';
 import { Footer } from './components/Footer';
-import { SiteChat } from './components/SiteChat';
+import { ChatWidget } from './components/ChatWidget';
+import { CookieConsent } from './components/CookieConsent';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
 import { ServicesPage } from './pages/ServicesPage';
@@ -39,7 +40,8 @@ function App() {
           <Route path="/properties" element={<PropertiesPage />} />
         </Routes>
         <Footer />
-        <SiteChat />
+        <ChatWidget />
+        <CookieConsent />
       </div>
     </BrowserRouter>
   );
